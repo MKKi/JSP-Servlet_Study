@@ -1,6 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
- 
+<%@ page import="java.net.URLDecoder" %>
 <!DOCTYPE html>
 <html>
 <head>
@@ -8,7 +8,8 @@
 <title>JSP</title>
 </head>
 <body bgcolor="yellow">
-	이 파일은 08_yellow.jsp 입니다.<br><hr>
-	브라우저에 나타나는 URL과는 상관없는 파일입니다.
+	<h3> 관리자로 로그인 </h3>
+	<%= URLDecoder.decode(request.getParameter("userName"), "UTF-8") %>
+	<%= request.getParameter("userid") %>님 환영합니다.
 </body>
 </html>
