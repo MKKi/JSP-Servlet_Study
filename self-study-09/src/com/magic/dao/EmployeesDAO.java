@@ -53,6 +53,9 @@ public class EmployeesDAO {
 						// lev="B"일 경우, result=2
 						if (lev.equals("B"))
 							result = 2;
+					} else {
+						if(rs.getString("lev").equals("A")) result = 3;
+						else result = 2;
 					}
 				} else {
 					// 비밀번호가 틀릴 경우, result = 1
