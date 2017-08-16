@@ -64,7 +64,7 @@ public class LoginServlet extends HttpServlet {
 			} else {
 				request.setAttribute("message", "아이디가 틀립니다.");
 			}
-			url = "login.jsp";
+			url = "/member/login.jsp";
 		}
 		
 		RequestDispatcher dispatcher = request.getRequestDispatcher(url);

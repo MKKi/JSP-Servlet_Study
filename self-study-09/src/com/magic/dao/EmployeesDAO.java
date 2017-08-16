@@ -154,4 +154,36 @@ public class EmployeesDAO {
 		
 		return result;
 	}
+	
+	//insertMember()
+	
+	public void insertMember(EmployeesVO eVo) {
+		Connection conn = null;
+		PreparedStatement pstmt = null;
+		String sql = "insert into employees values(?, ?, ?, ?, SYSDATE, ?, ?)";
+		
+		try {
+			conn = getConnection();
+			pstmt = conn.prepareStatement(sql);
+			pstmt.setString(1, eVo.getId());
+			pstmt.setString(2, eVo.getPass());
+			pstmt.setString(3, eVo.getName());
+			pstmt.setString(4, eVo.getLev());
+			pstmt.setInt(5, eVo.getGender());
+			pstmt.setString(6, eVo.getPhone());
+			pstmt.executeUpdate();
+			
+		} catch (Exception e) {
+			e.printStackTrace();
+		} finally {
+			try {
+				if (pstmt != null)
+					pstmt.close();
+				if (conn != null)
+					conn.close();
+			} catch (Exception e) {
+				e.printStackTrace();
+			}
+		}
+	}
 }

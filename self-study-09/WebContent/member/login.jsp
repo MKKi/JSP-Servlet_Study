@@ -44,9 +44,9 @@
 					<input type="reset" value="취소">
 				</td>
 			</tr>
+			<br>
+					<div style="color: red"> ${message } </div>
 		</table>
-		<br>
-		<div style="color: red"> ${message } </div>
 	</form>
 </body>
 </html>
