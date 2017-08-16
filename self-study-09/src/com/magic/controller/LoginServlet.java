@@ -62,7 +62,7 @@ public class LoginServlet extends HttpServlet {
 			if(result == 1) {
 				request.setAttribute("message", "비밀번호가 틀립니다.");
 			} else {
-				request.setAttribute("message", "아이디가 틀립니다.");
+				request.setAttribute("message", "등록되지 않은 아이디입니다.");
 			}
 			url = "/member/login.jsp";
 		}

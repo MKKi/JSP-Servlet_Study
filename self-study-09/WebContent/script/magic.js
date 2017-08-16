@@ -5,9 +5,9 @@ function loginCheck(){
 		return false;
 	}
 	
-	if(document.frm.pwd.value == ""){
+	if(document.frm.pass.value == ""){
 		alert('비밀번호를 입력해주세요.');
-		frm.pwd.focus();
+		frm.pass.focus();
 		return false;
 	}
 	
@@ -21,9 +21,9 @@ function myPageCheck(){
 		return false;
 	}
 	
-	if(document.frm.pwd.value == ""){
+	if(document.frm.pass.value == ""){
 		alert('비밀번호를 입력해주세요.');
-		frm.pwd.focus();
+		frm.pass.focus();
 		return false;
 	}
 	
