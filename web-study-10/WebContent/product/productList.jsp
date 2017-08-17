@@ -30,7 +30,7 @@
 						<a href="productUpdate.do?code=${product.code }"> 상품 수정 </a>
 					</td>
 					<td>
-						<a href="productDelead.do?code=${product.code }"> 상품 삭제 </a>
+						<a href="productDelete.do?code=${product.code }"> 상품 삭제 </a>
 					</td>
 				</tr>
 			</c:forEach>

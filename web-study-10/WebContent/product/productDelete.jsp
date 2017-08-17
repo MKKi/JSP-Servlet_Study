@@ -37,7 +37,7 @@
 							</tr>
 							<tr>
 								<th>설명 </th>
-								<td>${product.description } <td>
+								<td> ${product.description } </td>
 							</tr>
 						</table>
 					</td>
