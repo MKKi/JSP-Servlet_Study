@@ -27,7 +27,7 @@
 					<td> ${product.name } </td>
 					<td> ${product.price } </td>
 					<td>
-						<a href="productUpload.do?code=${product.code }"> 상품 수정 </a>
+						<a href="productUpdate.do?code=${product.code }"> 상품 수정 </a>
 					</td>
 					<td>
 						<a href="productDelead.do?code=${product.code }"> 상품 삭제 </a>
